@@ -2,6 +2,10 @@
 <html lang="en" dir="ltr">
   <head> <!-- stylesheet.css? -->
     <style>
+      #container {
+        width: 50%;
+        margin: auto;
+      }
       #header {
           background-color: #9966FF;
           width: 50%;
@@ -14,33 +18,38 @@
         margin: auto;
         background-color: #3399FF;
       }
-      #text {
-        margin:auto;
-        width: 50%;
-        display:block;
-        float: left;
-        background-color: #66FFCC;
+      #content {
+         width: 75%;
+         height: 200px;
+         background-color: blue;
+         float: left;
       }
       #image {
-        margin: auto;
-        width: 30%;
+        width: 25%;
+         height: 200px;
         display: block;
         background-color: #FF5050;
+        float: left;
+        margin: auto;
       }
       #foot {
-        display: block;
+          margin: auto;
+        height: 50px;
+        background-color: #00FF00;
         width: 100%;
-        margin: auto;
       }
     </style>
     <meta charset="utf-8">
     <title>Layouts</title>
   </head>
   <body>
-    <div id="header">HEADER</div>
-    <div id="nav">Navbar</div>
-    <div id="text">Content Text</div>
-    <div id="image">Image</div>
-    <div id="foot">Footer</div>
+    <div id="container">
+        <div id="header">HEADER</div>
+        <div id="nav">Navbar</div>
+        <div id="text">Content Text</div>
+        <div id="content">Content</div>
+        <div id="image">Image</div>
+        <div id="foot">Footer</div>
+    </div>
   </body>
 </html>
